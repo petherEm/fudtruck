@@ -22,7 +22,7 @@ const Veggie = ({ veggie }) => {
 
       }}>
         {recipes.map((recipe) => (
-          <SplideSlide>
+          <SplideSlide key={recipe.id}>
             <Link href={"/fullrecipe/" + recipe.id}>
             <div className="">
               <Image

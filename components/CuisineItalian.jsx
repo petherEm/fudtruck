@@ -22,9 +22,9 @@ const CuisineItalian = ({ italian }) => {
 
       }}>
         {recipes.map((recipe) => (
-          <SplideSlide>
+          <SplideSlide key={recipe.id}>
             <Link href={"/fullrecipe/" + recipe.id}>
-            <div key={recipe.id} className="">
+            <div className="">
               <Image
                 src={recipe.image ? recipe.image : 'https://c.tenor.com/_BiwWBWhYucAAAAM/what-huh.gif'}
                 width="600"

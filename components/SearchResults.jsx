@@ -55,7 +55,7 @@ const SearchResults = () => {
         }}
       >
         {recipes.map((recipe) => (
-          <SplideSlide>
+          <SplideSlide key={recipe.id}>
             <Link href={"/fullrecipe/" + recipe.id}>
               <div key={recipe.id} className="">
                 <Image
