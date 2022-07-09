@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
-const Search = ({ input }) => {
+const Search = () => {
   const [input, setInput] = useState("");
 
 
